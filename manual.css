@@ -426,7 +426,7 @@ footer {
 
 }
 
-@media (width < 630px) {
+@media (width < 665px) {
     #tabelas {
         display: block;
     }
