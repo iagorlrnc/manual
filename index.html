@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual - Administração</title>
+    <link rel="stylesheet" href="manual.css">
+    <link rel="icon" href="./images/icon.png">
+</head>
+<body>
+    <header>
+        <img src="./images/icon.png" alt="" width="80px">
+        <h1>Manual - Coordenação Regional de Administração</h1>
+    </header>
+
+<!-- Botão hamburger -->
+    <div class="hamburger-btn">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+    </div>
+    <!-- Barra de navegação oculta -->
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#sgd" class="nav-link">SGD</a></li>
+            <li class="nav-item"><a href="#chamados" class="nav-link">Chamados</a></li>
+            <li class="nav-item"><a href="#incluir" class="nav-link">Ordem de Tráfego</a></li>
+            <li class="nav-item"><a href="#impressoras" class="nav-link">Relatório das Impressoras</a></li>
+            <li class="nav-item"><a href="#adicionalNoturno" class="nav-link">Adicional Noturno</a></li>
+            <li class="nav-item"><a href="#multas" class="nav-link">Consultar Multas</a></li>
+            <li class="nav-item"><a href="#correios" class="nav-link">Correios</a></li>
+            <li class="nav-item"><a href="#patrimonio" class="nav-link">Patrimônio</a></li>
+            <li class="nav-item"><a href="#almoxarifado" class="nav-link">Almoxarifado</a></li>
+            <li class="nav-item"><a href="#email" class="nav-link">Email - Viagem</a></li>
+            <li class="nav-item"><a href="#copysys" class="nav-link">CopySystems</a></li>
+        </ul>
+    </nav>
+    <nav class="navbar2">
+        <ul class="nav-list2">
+            <li class="nav-item2"><a href="#sgd" class="nav-link2">SGD</a></li>
+            <li class="nav-item2"><a href="#chamados" class="nav-link2">Chamados</a></li>
+            <li class="nav-item2"><a href="#incluir" class="nav-link2">Ordem de Tráfego</a></li>
+            <li class="nav-item2"><a href="#impressoras" class="nav-link2">Relatório das Impressoras</a></li>
+            <li class="nav-item2"><a href="#adicionalNoturno" class="nav-link2">Adicional Noturno</a></li>
+            <li class="nav-item2"><a href="#multas" class="nav-link2">Consultar Multas</a></li>
+            <li class="nav-item2"><a href="#correios" class="nav-link2">Correios</a></li>
+            <li class="nav-item2"><a href="#patrimonio" class="nav-link2">Patrimônio</a></li>
+            <li class="nav-item2"><a href="#almoxarifado" class="nav-link2">Almoxarifado</a></li>
+            <li class="nav-item2"><a href="#email" class="nav-link2">Email - Viagem</a></li>
+            <li class="nav-item2"><a href="#copysys" class="nav-link2">CopySystems</a></li>
+        </ul>
+    </nav>
+    <!-- Overlay para fechar o menu ao clicar fora -->
+    <div class="overlay"></div>
+
+    <main>
+        <section class="accordion-item" id="sgd">
+            <h2 class="titulo" onclick="toggleSection()">SGD <span class="accordion-icon text-xl" id="arrow">🔽</span></h2>
+            <div class="oculto" id="infoSection">
+                <div class="accordion-content-inner">
+                    <p><strong>Site:</strong><br><a href="https://sgd.to.gov.br/" target="_blank">sgd.to.gov.br/</a></p>
+                    <h3>Incluir documentos</h3>
+                    <ul>
+                        <li style="list-style-type: none;">➥ Documentos</li>
+                        <ul>
+                            <li style="list-style-type: none;">➥ Incluir</li>
+                        </ul>
+                    </ul>
+                    <p><strong>OBS: </strong>O campo <span class="azul"><strong>TIPO DE ACESSO</strong></span> sempre deverá ser selecionado <span class="azul"><strong>POR TODAS AS UNIDADES.</strong></span></p>
+                </div>
+            </div>
+        </section>
+        <section class="accordion-item" id="chamados">
+            <h2 class="titulo" onclick="toggleSection1()">Chamados <span class="accordion-icon text-xl" id="arrow1">🔽</span></h2>
+            <div class="oculto" id="infoSection1">
+                <div class="accordion-content-inner">
+                    <p><strong>Site:</strong><br><a href="https://chamados.sefaz.to.gov.br/front/central.php" target="_blank">chamados.sefaz.to.gov.br/</a></p>
+                    <h3>Abrir chamado:</h3>
+                        <ul>
+                            <li style="list-style-type: none;"><p><strong>➥ 🎧Assistência</strong></p></li>
+                            <ul>
+                                <li style="list-style-type: none;"><p><strong>➥ + Criar chamado</strong> </p></li>
+                            </ul>
+                        </ul>
+                        <p><strong>Tipo: </strong><br>Incidente</p>
+                        <p><strong>Categoria: </strong><br>(seleciona o motivo da abertura do chamado)</p>
+                        <p><strong>Localização: </strong><br>Delegacia Regiona de Fiscalização de Palmas</p>
+                    <h3>Preenchimento do corpo do chamado</h3>
+                        <p><strong>Departamento: </strong><br>(Setor solicitante)</p>
+                        <p><strong>Usuário:</strong><br>(Nome)</p>
+                        <p><strong>Telefone para contato:</strong><br>(63) 3027-****</p>
+                        <p><strong>E-mail</strong><br>admpalmas@sefaz.to.gov.br</p>
+                        <p><strong>Patrimônio:</strong><br>(Número de patriônio do aparelho)</p>
+                        <p><strong>Descreva sua solicitação:</strong><br>(Um breve texto explicando o motivo da manutenção)</p>
+                        <span>➥</span><button id="btntramitar"><strong>+ Adicionar</strong></button>
+                        <p class="vermelho">*Imprimir uma cópia do chamado para colocar na pasta de demandas.</p>
+                </div>
+            </div>
+        </section>
+        <section id="incluir">
+            <h2 class="titulo" onclick="toggleSection2()">Ordem de Tráfego <span id="arrow2">🔽</span></h2>
+            <div class="oculto" id="infoSection2">
+                <div class="accordion-content-inner">
+                    <h3>Planilha editável Ordem de Tráfego</h3>
+                        <p><strong>Local do arquivo editável na pasta pública:</strong></p>
+                        <ul>
+                            <li style="list-style-type: none;">➥ 📁ADMPALMAS</li>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ 📁DRF PALMAS - GESTÃO DE VEÍCULOS OFICIAIS</li>
+                                        <ul>
+                                            <li style="list-style-type: none;">➥ 📁6. ORDENS DE TRÁFEGO</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;">➥ 📁EDITÁVEL ORDEM DE TRÁFEGO E PORTARIA</li>
+                                                        <ul>
+                                                            <li style="list-style-type: none;">➥ 📄ORDEM DE TRÁFEGO</li>
+                                                        </ul>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                        </ul>
+                        <ul>
+                            <li>Troca a placa do veículo (os dados preencherão automaticamente).</li>
+                            <li>Troca a matrícula do condutor (os dados preencherão automaticamente).</li>
+                            <li>No espaço abaixo de itinerário, indicar o setor ao qual o veículo estará a disposição.</li>
+                            <li>Trocar a data de duração de serviço.</li>
+                            <li style="list-style-type: none;" class="vermelho">*Cada veículo possui uma planilha específica, onde será necessário atualizar apenas a data do campo "duração do serviço" e, se for o caso, o nome do condutor.</li>
+                        </ul>
+                        <p class="pequeno"><strong>COMANDO VOLANTE:</strong><br><br>
+                            <strong class="pequeno">➥ ITINERÁRIO:</strong><br>
+                            <em>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"PALMAS E SEUS RESPECTIVOS DISTRITOS"<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"COMANDO VOLANTE PALMAS"<br>
+                            </em><br>
+                            <strong class="pequeno">➥ DURAÇÃO DO SERVIÇO:</strong><br>
+                            <span class="vermelho">*O período sempre será das 00:00 às 23:59.</span><br><br>
+                            <strong class="pequeno">➥ DESCRIÇÃO:</strong><br>
+                            <em>
+                                "RESSALTO QUE OS CONDUTORES ACIMA MENCIONADOS INICIARÃO A ESCALA AS **:** DO DIA **/**/**** E FINALIZARÃO AS **:** DO DIA **/**/****."
+                            </em><br>
+                            <span class="vermelho">*Na descrição, altera somente a data de duração do serviço conforme Escala de Serviço.</span>
+                        </p>
+                        <h3>Portaria - Viagem para as Agências de Atendimento do interior</h3>
+                            <p><strong>Local do arquivo editável na pasta pública:</strong></p>
+                            <ul class="pequeno">
+                                <li style="list-style-type: none;">➥📁ADMPALMAS</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥📁DRF PALMAS - GESTÃO DE VEÍCULOS OFICIAIS</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥📁6. ORDENS DE TRÁFEGO</li>
+                                                    <ul>
+                                                        <li style="list-style-type: none;">➥📁EDITAVEL ORDEM DE TRAFEGO E PORTARIA</li>
+                                                            <ul>
+                                                                <li style="list-style-type: none;">➥📄PORTARIA VIAGEM INTERIOR</li>
+                                                                <li style="list-style-type: none;" class="vermelho">*<strong>Alterar somente:</strong></li>
+                                                                <li style="list-style-type: none;" class="vermelho">➥Número e a data da portaria.</li>
+                                                                <li style="list-style-type: none;" class="vermelho">➥Data da viagem no corpo do documento.</li>
+                                                                    <ul>
+                                                                        <li style="list-style-type: none;">➥ Salvar arquivo em PDF.</li>
+                                                                    </ul>
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    <h3>Cadastrar Ordem de Tráfego no SGD</h3>
+                        <p><strong>Assunto:</strong><br>Ordem de Tráfego Veículo Placa *** - **** para o período **/**/**** a **/**/****.</p>
+                        <p><strong>Interessados:</strong><br>(Nome do motorista condutor do veículo).</p>
+                        <p><strong>Referência:</strong><br>ODT período **/**/**** a **/**/****.</p>
+                        <p><strong>Espécie Documental:</strong><br>Ordem de Tráfego – ODT.</p>
+                        <p><strong>Classificação Arquivística:</strong><br>090 – Outros assuntos referentes à administração geral.</p>
+                        <p><strong>Arquivo:</strong><br>(Anexar a ordem de tráfego do veículo).</p>
+                        <p><strong>Tipo de Acesso:</strong><br>Todas as unidades.</p>
+                        <p><span>➥</span>Incluir e vizualizar <button>➡</button></p>
+                        <p><strong>Definir Assinatura:</strong><br>(Miller Cláudia e o condutor do veículo).</p>
+                        <p class="vermelho">*Aguardar a assinatura de todos para tramitar.</p>
+
+                    <h3>Cadastrar Ordem de Tráfego de Viagem no SGD</h3>
+                        <p><strong>Assunto:</strong><br>Ordem de Tráfego Veículo Placa *** - **** para viagem dia **/**/****.</p>
+                        <p><strong>Interessados:</strong><br>(Nome do motorista condutor do veículo).</p>
+                        <p><strong>Referência:</strong><br>ODT VIAGEM DIA **/**/****</p>
+                        <p><strong>Espécie Documental:</strong><br>Ordem de Tráfego – ODT.</p>
+                        <p><strong>Classificação Arquivística:</strong><br>090 – Outros assuntos referentes à administração geral.</p>
+                        <p><strong>Arquivo:</strong><br>(Anexar a ordem de tráfego do veículo).</p>
+                        <p><strong>Tipo de Acesso:</strong><br>Todas as unidades.</p>
+                        <p><span>➥</span>Incluir e vizualizar <button>➡</button></p>
+
+                        <h3>Anexar a portaria de viagem ao SGD</h3>
+                        <ul>
+                            <li style="list-style-type: none;">➥ Ações ▼</li>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ 📄Arquivo Digital</li>
+                                </ul>
+                        </ul>
+                        <p><strong>Espécie/Tipo Documental:</strong><br>Portaria</p>
+                        <p class="vermelho">*Anexar o arquivo em PDF da Portaria e aperta o botão "incluir", depois volta para o documento.</p>
+                        <span>➥</span><button id="btntramitar">Incluir</button>&nbsp;&nbsp;<button id="btntramitar">Voltar</button>
+                        <p><strong>Definir Assinatura:</strong><br>(Miller Cláudia)<br><span class="vermelho">*Seleciona a ORDEM DE TRÁFEGO e a  PORTARIA.</span><br>(Condutor do veículo)<br><span class="vermelho">*Seleciona apenas a ORDEM DE TRÁFEGO</span></p>
+
+                        <span>➥</span><button id="btntramitar">Incluir</button>
+                        <p class="vermelho">*Aguardar a assinatura para tramitar.</p>
+
+                    <h3>Tramitação</h3>
+                        <p><strong>Unidade Destino:</strong><br>PROTOCOLO-PROT-SEFAZ</p>
+                        <p><strong>Motivo:</strong><br>Encaminhamento.</p>
+                        <p><strong>Despacho:</strong><br>Favor tramitar para Garagem Central do Estado.</p>
+                        <span>➥</span><button id="btntramitar">Tramitar</button>
+                        <p class="vermelho">*Após tramitar, imprimir uma cópia da ordem de tráfego, escrever o número do SGD na parte superior e a data da tramitação na parte inferior da página. </p>
+                </div>
+            </section>
+            <section id="impressoras">
+                <h2 class="titulo" onclick="toggleSection3()">Relatório das Impressoras <span id="arrow3">🔽</span></h2>
+                <div class="oculto" id="infoSection3">
+                    <div class="accordion-content-inner"></div>
+                    <h3>Impressão da Página de Status</h3>
+                        <h4>Impressora Administração</h4>
+                            <ul>
+                                <li style="list-style-type: none;">➥ Menu</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥ Relatório de Saída</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥ Imprimir Lista</li>
+                                                    <ul>
+                                                        <li style="list-style-type: none;">➥ 🔒Lista de Dados de Gerente do Sistema</li>
+                                                            <ul>
+                                                                <li style="list-style-type: none;">➥ ID Gerente do Sistema: 1998 | PIN: 1998</li>
+                                                                    <ul>
+                                                                        <li style="list-style-type: none;">➥ Iniciar</li>
+                                                                    </ul>
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                            <ul>
+                                <li class="vermelho" style="list-style-type: none;">
+                                    *Ao sair a primeira folha:<br>
+                                    Apertar o botão [Cancelar] e depois [Sim]
+                                </li>
+                            </ul>
+                        <h4>Demais Impressoras</h4>
+                            <ul>
+                                <li style="list-style-type: none;">➥ Menu de Sistema/Contador</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥ Relatório</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥ Imprimir Relatório</li>
+                                                    <ul>
+                                                        <li style="list-style-type: none;">➥ Página de Status</li>
+                                                            <ul>
+                                                                <li style="list-style-type: none;">➥ [ sim ]</li>
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                            <ul>
+                                <li style="list-style-type: none;"><p class="vermelho">*Após imprimir as páginas de status de todas as impressoras:<br>➥ Escrever o nome do setor/agência na parte superior da folha<br>➥ Sublinhar o medidor atual e traçar um seta<br>➥ Scannear todas as folhas em um único arquivo PDF</p></li>
+                            </ul>
+                <h3>Planilha de Controle dos Relatórios das Impressoras</h3>
+                    <p><strong>Local do arquivo editável na pasta pública:</strong></p>
+                    <ul>
+                        <li style="list-style-type: none;">➥ 📁ADMPALMAS</li>
+                            <ul>
+                                <li style="list-style-type: none;">➥ 📁DRF PALMAS - IMPRESSORA</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥ 📁RELATÓRIO DE IMPRESSORAS 2025</li>
+                                            <ul>
+                                                
+                                                
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    </ul>
+                    <p class="vermelho"> *Abre a planilha editável do mês anterior e troca o campo "MEDIDOR ATUAL" de cada impressora, além de trocar a data do período da leitura.</p>
+                    <p class="vermelho">*Após editar, salva um novo arquivo em Excel renomeado com a data atualizada e um arquivo em PDF.</p>
+                <h3>Cadastrar no SGD</h3>
+                    <p><strong>Assunto:</strong><br>Relatório de impressora referente ao período de **/**/**** a **/**/****.</p>
+                        <p><strong>Interessados:</strong><br>DELEGACIA REGIONAL DE FISCALIZAÇÃO EM PALMAS</p>
+                        <p><strong>Referência:</strong><br>RELATORIO DE IMPRESSORA MES (mês) de (ano)</p>
+                        <p><strong>Espécie Documental:</strong><br>Relatório</p>
+                        <p><strong>Classificação Arquivística:</strong><br>090 – Outros assuntos referentes à administração geral.</p>
+                        <p><strong>Arquivo:</strong><br>(Anexar o relatório).</p>
+                        <p><strong>Tipo de Acesso:</strong><br>Todas as unidades.</p>
+                        <p><span>➥</span>Incluir e vizualizar <button>➡</button></p>
+                        <h3>Anexar as páginas de status ao documento</h3>
+                        <ul>
+                            <li style="list-style-type: none;">➥ Ações ▼</li>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ 📄Arquivo Digital</li>
+                                </ul>
+                        </ul>
+                        <p><strong>Espécie/Tipo Documental:</strong><br>Anexo</p>
+                        <p class="vermelho">*Anexar o arquivo em PDF scanneado das paginas de status e aperta o botão "incluir", depois volta para o documento.</p>
+                        <span>➥</span><button id="btntramitar">Incluir</button>&nbsp;&nbsp;<button id="btntramitar">Voltar</button>
+                        <p><strong>Definir Assinatura:</strong><br>(Miller Cláudia).</p>
+                        <p class="vermelho">*Selecionar apenas o RELATÓRIO.</p>
+                        <span>➥</span><button id="btntramitar">Incluir</button>
+                        <p class="vermelho">*Aguardar a assinatura para tramitar.</p>
+                    <h3>Tramitação</h3>
+                        <p><strong>UNIDADE DE DESTINO:</strong><br>GERÊNCIA GERAL DE ADMINISTRAÇÃO - GGA</p>
+                        <p><strong>AOS CUIDADOS DE:</strong><br>ANTONIO LUIZ DE ALMEIDA BRAGA</p>
+                        <p><strong>MOTIVO:</strong><br>ANÁLISE E PROVIDÊNCIAS.</p>
+                        <p><strong>DESPACHO:</strong><br>ANÁLISE E PROVIDÊNCIAS</p>
+                        <span>➥</span><button id="btntramitar">Tramitar</button>
+                        <p class="vermelho">*Após tramitar, imprimir apenas a primeira página do documento, escrever o número do SGD na parte superior e a data da tramitação na parte inferior da página. </p>
+                </div>
+            </div>
+        </section>
+        <section id="adicionalNoturno">
+            <h2 class="titulo" onclick="toggleSection4()">Adicional Noturno <span id="arrow4">🔽</span></h2>
+            <div class="oculto" id="infoSection4">
+                <div class="accordion-content-inner">
+                    <h3>Primeiros Passos</h3>
+                        <ul>
+                            <li>Baixar a planilha editável do Adicional Noturno mensal enviada pelo email para a Administração ao final de todo mês</li>
+                            <li>Scannear a planilha impressa e a escala de serviço referentes ao mês corrente</li>
+                        </ul>
+                        <h3>Enviar pelo email</h3>
+                        <p><strong>Destinatário:</strong><br>gft@sefaz.to.gov.br</p>
+                        <p><strong>Assunto:</strong><br>ADICIONAL NOTURNO DOS AUDITORES LOTADOS NA DRF PALMAS REFERENTE AO MÊS DE (mês).(ano)</p>
+                        <p><strong>Corpo do email:</strong><br>
+                            <br>"Bom dia,<br><br>
+                        Segue anexo a este email, planilha de cálculo do adicional noturno dos auditores fiscais lotados nesta regional, referente ao mês de MÊS.ANO, acompanhado dos documentos relacionados abaixo:
+                        <ul>
+                            <li>Planilha de cálculo em Word e Excel;</li>
+                            <li>Escala de Serviço;</li>
+                            <li>Ordem de Serviço.</li><br>
+                        <strong>OBS: </strong>Favor enviar o recebido deste.
+                        </ul>--<br>
+                        Nome<br>
+                        Cargo"
+                        </p>
+                        <p><strong>Anexos ao email:</strong><br>
+                            <ul>
+                                <li>Planilha editável em arquivo (.xls);</li>
+                                <li>Planilha e escala de serviço em pdf (scanneados).</li>
+                            </ul>
+                        </p>
+                        <p class="vermelho">*Após enviar, imprimir o email para arquivar no dissiê de Adicional Noturno.</p>
+
+                        <h3>Memorando do Adicional Noturno</h3>
+                                <p><strong>Local do arquivo editável na pasta pública:</strong></p>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ 📁ADMPALMAS</li>
+                                        <ul>
+                                            <li style="list-style-type: none;">➥ 📁MEMORANDO ADICIONAL NOTURNO</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;">➥ 📄MEMORANDO SEFAZ n**.2025</li>
+                                                </ul>
+                                        </ul>
+                                </ul>
+
+                        <h3>MEMORANDO CIRCULAR N° 01/2025 - SEFAZ/SAT/DIREC/GFT<br>SGD: 2025/25009/057743</h3>
+                        <div id="memorando">
+                            <h4>Assunto: ORIENTAÇÕES SOBRE ENVIO DE ADICIONAL NOTURNO</h4>
+                            <P><em>
+                                "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tendo em vista, a necessidade de padronizar o envio da planilha de Adicional Noturno, orientamos às Delegacias Regionais de Fiscalização para que elaborem um memorando direcionado a Gerência de Fiscalização de trânsito (modelo do <strong>Memorando</strong> e <strong>Planilha</strong> em anexo) e encaminhem os seguintes documentos.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enviar <strong>via SGD</strong> com os seguintes documentos em anexo:
+                                <ul>
+                                    <li>Lista com matrículas novas dos Auditores Fiscais</li>
+                                    <li> Escala em formato <strong>PDF</strong></li>
+                                    <li>Ordens de Serviço em formato <strong>PDF</strong></li>
+                                    <li>Planilha de adicional noturno em formato <strong>PDF</strong></li>
+                                </ul>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Além destes, deve ser enviado via e-mail para <strong>gft@sefaz.to.gov.br</strong> o seguinte documento em anexo:
+                                <ul>
+                                    <li>Planilha de adicional noturno em formato <strong>EXCEL</strong></li>
+                                </ul>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Os documentos devem ser enviados até o dia 05 do mês subsequente ao da escala.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contamos com a colaboração de todos."</em>
+                            </P>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="multas">
+            <h2 class="titulo" onclick="toggleSection8()">Consultar Multas <span id="arrow8">🔽</span></h2>
+            <div class="oculto" id="infoSection8">
+                <div class="accordion-content-inner">
+                    <p><strong>Site:</strong><br><a href="https://www.to.gov.br/detran/veiculos" target="_blank">to.gov.br/detran/veiculos</a><br><span class="vermelho">*Consultar semanalmente todos os carros pertencentes à Administração se há multas.</span></p>
+                    <p><strong>Local do arquivo com as informações dos veículos:</strong></p>
+                            <ul>
+                                <li style="list-style-type: none;">➥📁ADMPALMAS</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥📁DRF PALMAS - GESTÃO DE VEÍCULOS OFICIAIS</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥📁4. INFORMAÇÕES DOS VEÍCULOS, TROCA DE ÓLEO, PNEUS E BATERIAS</li>
+                                                    <ul>
+                                                        <li style="list-style-type: none;">➥📄 RELAÇÃO VEÍCULOS - RENAVAM E SEGURO</li>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    <ul>
+                        <li>Copia e cola a placa e o renavam do veículo, logo depois o CNPJ.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="correios">
+            <h2 class="titulo" onclick="toggleSection5()">Correios <span id="arrow5">🔽</span></h2>
+            <div class="oculto" id="infoSection5">
+                <div class="accordion-content-inner">
+                    <h3>Planilha de Relatório de Despesas do Correio</h3>
+                        <p><strong>Local do arquivo editável na pasta pública:</strong></p>
+                            <ul>
+                                <li style="list-style-type: none;">➥ 📁ADMPALMAS</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥ 📁DRF PALMAS - CORREIOS</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥ 📄RELATÓRIO DE DESPESAS DO CORREIO</li>
+                                                    <ul>
+                                                        <li>Abre a planilha editável.</li>
+                                                        <li>Seleciona a agência de atendimento.</li>
+                                                        <li>Atualize a data conforme o recibo.</li>
+                                                        <li>Verifique se a correspondência é registrada (AR) ou Sedex.</li>
+                                                        <li>Preencha a quantidade de correspondências conforme o valor.</li>                                           
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                        <p class="vermelho">*Ao finalizar, imprime 2 cópias, grampeie o recibo nas cópias e coloque na caixa de processos para a Sede.</p>
+                </div>
+            </div>
+        </section>
+        <section id="patrimonio">
+            <h2 class="titulo" onclick="toggleSection10()">Patrimônio <span id="arrow10">🔽</span></h2>
+            <div class="oculto" id="infoSection10">
+                <div class="accordion-content-inner">
+                    <p><strong>Site:</strong><br><a href="https://www.siga.to.gov.br/patrimonio-mobiliario/#/patrimonios" target="_blank">siga.to.gov.br/patrimonio-mobiliario/</a></p>
+                    <p><strong>Pesquisar patrimônio:</strong><br>
+                        <ul>
+                            <li style="list-style-type: none;">➥ 📄Patrimônios</li>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ Patrimônio</li>
+                                        <ul>
+                                            <li style="list-style-type: none;">➥ "Busque por: número do patrimonio"</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;"><span class="vermelho">*Digite o número do patrimônio no campo.</span></li>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                        </ul>
+                        <p><strong>Baixar Relatório de Localização:</strong><br>
+                        <ul>
+                            <li style="list-style-type: none;">➥ 📄Relatórios</li>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ Localizações</li>
+                                        <ul>
+                                            <li>Órgão<span class="vermelho">*</span></li>
+                                            <li style="list-style-type: none;"><span class="azul">➥ SEFAZ - Secretaria da Fazenda</span></li>
+                                            <li>Setor<span class="vermelho">*</span></li>
+                                            <li style="list-style-type: none;"><span class="azul">➥ Seleciona o setor/agência</span></li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥ Clique no botão "Gerar PDF" na parte inferior esqueda.</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;"><span>➥</span><button id="btntramitar">Gerar PDF</button></li>
+                                                </ul>
+                                            </ul>
+                                        </ul>
+                                </ul>
+                        </ul>
+                    </p>
+                    <p><strong>Local do arquivo da planilha de Gestão de Patrimônio:</strong></p>
+                            <ul>
+                                <li style="list-style-type: none;">➥📁ADMPALMAS</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥📁DRF PALMAS - GESTÃO DE PATRIMÔNIO</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥📁3. Gestão de Patrimônio, celular, modem, notebook</li>
+                                                    <ul>
+                                                        <li style="list-style-type: none;">➥📄 1.GESTÃO DE PATRIMÔNIO - DRF PALMAS_ATUALIZADO</li>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                    <ul>
+                        <li>Atualizar e acompanhar a planilha conforme Relatório de Localização disponível no site.</li>
+                    </ul>
+                    <h3>Siglas</h3>
+                    <div id="tabelas">
+                        <div id="tabela1">
+                            <table border="solid 1">
+                            <tr>
+                                <th class="larguraSetor">SETORES</th>
+                                <th class="larguraSigla">SIGLAS</th>
+                            </tr>
+                            <tr>
+                                <td>Gabinete do Delegado</td>
+                                <td>DRR PALMAS - GD</td>
+                            </tr>
+                            <tr>
+                                <td>Coordenação Regional de Administração</td>
+                                <td>DRR PALMAS - GAF</td>
+                            </tr>
+                            <tr>
+                                <td>Gabinete do Fiscalização</td>
+                                <td>DRR PALMAS - DF</td>
+                            </tr>
+                            <tr>
+                                <td>Coordenação Regional de Arrecadação</td>
+                                <td>DRR PALMAS - CORAF</td>
+                            </tr>
+                            <tr>
+                                <td>Supervisão Fiscal</td>
+                                <td>DRR PALMAS - SF</td>
+                            </tr>
+                            <tr>
+                                <td>Auditoria</td>
+                                <td>DRR PALMAS - A</td>
+                            </tr>
+                            <tr>
+                                <td>ITCD</td>
+                                <td>DRR PALMAS - ITCD</td>
+                            </tr>
+                            <tr>
+                                <td>Arquivo de Dossiês</td>
+                                <td>DRR PALMAS - AD</td>
+                            </tr>
+                        </table>
+                        </div>
+                        <div id="tabela2">
+                            <table border="1">
+                            <tr>
+                                <th>AGÊNCIAS</th>
+                                <th>SIGLAS</th>
+                            </tr>
+                            <tr>
+                                <td>Agência de Atendimento de PALMAS</td>
+                                <td>ATEPALMAS</td>
+                            </tr>
+                            <tr>
+                                <td>Agência de Atendimento de TAQUARALTO</td>
+                                <td>AATA</td>
+                            </tr>
+                            <tr>
+                                <td>Agência de Atendimento de APARECIDA DO RIO NEGRO</td>
+                                <td>AGA - AP</td>
+                            </tr>
+                            <tr>
+                                <td>Agência de Atendimento de LAGOA DO TOCANTINS</td>
+                                <td>AALT</td>
+                            </tr>
+                            <tr>
+                                <td>Agência de Atendimento de NOVO ACORDO</td>
+                                <td>ANA</td>
+                            </tr>
+                            <tr>
+                                <td>Agência de Atendimento de SANTA TEREZA DO TOCANTINS</td>
+                                <td>AASTTO</td>
+                            </tr>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="almoxarifado">
+            <h2 class="titulo" onclick="toggleSection6()">Almoxarifado - Anexo II <span id="arrow6">🔽</span></h2>
+            <div class="oculto" id="infoSection6">
+                <div class="accordion-content-inner">
+                    <h3>Contatos</h3>
+                        <p><strong>Email:</strong><br>almoxarifado@sefaz.to.gov.br</p>
+                        <p><strong>Whatsapp:</strong><br> <a href="https://wa.me/5563992084903" target="_blank">(63) 99208-4903</a> - Lucas</p>
+                    <h3>Solicitação de Materiais para o almoxarifado</h3>
+                        <ul>
+                            <li>Semanalmente, toda sexta-feira, enviar a solicitação dos materiais para o e-mail do almoxarifado.</li>
+                            <li>Uma vez por mês, incluir os materiais de expediente/escritório na solicitação de materiais semanal.</li>
+                        </ul>
+
+                        <p><strong>Local do arquivo editável na pasta pública:</strong></p>
+                            <ul class="pequeno">
+                                <li style="list-style-type: none;">➥📁ADMPALMAS</li>
+                                    <ul>
+                                        <li style="list-style-type: none;">➥📁DRF PALMAS - ALMOXARIFADO</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥📄 LISTA PARA TRANSFERÊNCIA - NOVO</li>
+                                                    <li style="list-style-type: none;" >*<strong>Alterar:</strong></li>
+                                                        <li style="list-style-type: none;">➥Deixar somentes os materiais solicitados.</li>
+                                                        <li style="list-style-type: none;">➥Alterar a quantidade.</li>
+                                                        <ul>
+                                                            <li style="list-style-type: none;" class="vermelho">➥ NÃO salvar o arquivo editável.</li>
+                                                            <li style="list-style-type: none;" class="vermelho">➥ Salvar apenas o arquivo em PDF.</li>
+                                                        </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+
+                        <p><strong>Destinatário:</strong><br>almoxarifado@sefaz.to.gov.br</p>
+                        <p><strong>Assunto:</strong><br>Solicitação Materiais DRF Palmas</p>
+                        <p><strong>Corpo do email:</strong><br>
+                            <br>"Bom dia,<br><br>
+                        Solicito materiais para atender o Anexo III.
+                        <br><br>
+                        --<br>
+                        Nome<br>
+                        Cargo"
+                        </p>
+                        <p><strong>Anexo ao email:</strong><br>
+                        <ul>
+                            <li>Requisição semanal dos materiais.</li>
+                        </ul>
+                        </p>
+
+                    <h3>Sistema - SIGA</h3>
+                        <p><strong>Site:</strong><br><a href="https://www.siga.to.gov.br/almoxarifado/#/requisicoes" target="_blank">www.siga.to.gov.br/almoxarifado/</a></p>
+                        <p><strong>Solicitação de materiais pelas agências e setores:</strong>
+                        <p>Os materiais são solicitados para Administração via e-mail e pelo SIGA.</p>
+                            <ul>
+                                <li style="list-style-type: none;">➥ 📄Requisições</li>
+                                <ul>
+                                    <li style="list-style-type: none;" class="azul2">*Caso o campo "situação" esteja em <span class="laranja">Aprovação</span> ou <span class="laranja">Liberação</span>:</li>
+                                        <ul>
+                                            <li style="list-style-type: none;">➥ Em <span class="azul2">ações</span>, seleciona a opção "Editar" onde é representado por um lápis.</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;">➥ Enviar para Liberação</li>
+                                                    <li style="list-style-type: none;">➥ Itens da Requisição</li>
+                                                    <li style="list-style-type: none;">➥ Libera a quantidade conforme estoque disponível.</li>
+                                                    <li style="list-style-type: none;">➥ Ao liberar todos os itens, aperta a opção "Finalizar"</li>
+                                                    <li style="list-style-type: none;">➥ Preenche somente o nome do servidor que solicitou e confirma.</li>
+                                                    <li style="list-style-type: none;">➥ Seleciona a opção "Gerar Nota", representado por "<span class="grande">🗎</span>" e confirma.</li>
+                                                        <ul>
+                                                            <li style="list-style-type: none;" class="vermelho">➥ *Imprime uma cópia para assinatura de recebimento dos materiais.</li>
+                                                        </ul>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                            </ul>
+                            <ul>
+                                <li style="list-style-type: none;">➥ ⮚ Transferências</li>
+                                    <ul>
+                                        <li style="list-style-type: none;" class="azul2">*Caso o campo "situação" esteja em <span class="laranja">Recebimento</span>:</li>
+                                            <ul>
+                                                <li style="list-style-type: none;">➥ Em <span class="azul2">ações</span>, seleciona a opção "Editar" onde é representado por um lápis.</li>
+                                                    <ul>
+                                                        <li style="list-style-type: none;">➥ Itens da Requisição</li>
+                                                        <li style="list-style-type: none;">➥ Verifica se está os itens estão corretos.</li>
+                                                        <li style="list-style-type: none;">➥ Aperta a opção "Finalizar".</li>
+                                                        <li style="list-style-type: none;">➥ Seleciona a opção "Gerar Nota", representado por "<span class="grande">🗎</span>" e confirma.</li>
+                                                            <ul>
+                                                                <li style="list-style-type: none;" class="vermelho">➥ *Imprime uma cópia para arquivar.</li>
+                                                            </ul>
+                                                    </ul>
+                                            </ul>
+                                    </ul>
+                            </ul>
+                            <ul>
+                                <li style="list-style-type: none;">➥ 🡻 Saídas</li>
+                                <ul>
+                                    <li style="list-style-type: none;">➥ Aperta em "+ Novo"</li>
+                                    <li style="list-style-type: none;"><span>➥</span><button id="btntramitar">+ Novo</button></li>
+                                        <ul>
+                                            <li style="list-style-type: none;">➥ <strong>Tipo de saída: </strong>Requisição</li>
+                                            <li style="list-style-type: none;">➥ <strong>Saída setor único?:</strong>◉ Sim</li>
+                                            <li style="list-style-type: none;">➥ <strong>Órgão Destino: </strong>SEFAZ - Secretaria da Fazenda</li>
+                                            <li style="list-style-type: none;">➥ <strong>Setor Destino: </strong>(Seleciona o setor/agência para onde foi entregue o material solicitado).</li>
+                                            <li style="list-style-type: none;">➥ <strong>Observações: </strong>"Para atender solicitação do setor"</li>
+                                            <li style="list-style-type: none;">➥ Aperta em "Salvar"</li>
+                                            <li style="list-style-type: none;">➥ Itens da Saída</li>
+                                            <li style="list-style-type: none;">➥ Aperta no botão para adicionar os itens</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;"><span>➥</span><button id="btntramitar">+ Adicionar Item</button></li>
+                                                </ul>
+                                            <li style="list-style-type: none;">➥ Pesquise o item procurado</li>
+                                            <li style="list-style-type: none;">➥ Preencha a quantidade de saída</li>
+                                            <li style="list-style-type: none;">➥ Aperte em "Finalizar" após adicionar todos os itens</li>
+                                            <li style="list-style-type: none;">➥ Selecione o botão para confirmar</li>
+                                                <ul>
+                                                    <li style="list-style-type: none;"><span>➥</span><button id="btntramitar">Confirmar</button></li>
+                                                </ul>
+                                        </ul>
+                                </ul>
+                            </ul>        
+                <p class="vermelho">*Ao final de cada mês, a partir do penúltimo dia, verificar se há requisições de materiais pendentes. O mês não deve ser encerrado com requisições em aberto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="email">
+            <h2 class="titulo" onclick="toggleSection9()">Email - viagem para o interior <span id="arrow9">🔽</span></h2>
+            <div class="oculto" id="infoSection9">
+                <div class="accordion-content-inner">
+                    <h3>Coordenação Regional de Arrecadação</h3>
+                        <p><strong>Destinatário:</strong><br>
+                        arrecpalmas@sefaz.to.gov.br<br>
+                        </p>
+                        <p><strong>Assunto:</strong><br>Informação sobre a ida do veículo oficial às agências de atendimento do interior</p>
+                        <p><strong>Corpo do email:</strong><br>
+                            <br>"Bom dia,<br><br>
+                        Informo que o veículo oficial partirá para as agências de atendimento do interior (Santa Tereza do TO, Lagoa do TO, Novo Acordo e Aparecida do Rio Negro) no dia **/**/***.<br>
+                        Caso tenham processos para enviar, favor deixar na administração até o dia **/**/***.<br>
+                        <strong>OBS: Favor enviar o recebido deste.</strong>
+                        <br><br>
+                        --<br>
+                        Nome<br>
+                        Cargo"
+                        </p>
+                    <h3>Agências de Atendimento</h3>
+                        <p><strong>Destinatário:</strong><br>
+                            palmas@sefaz.to.gov.br<br>
+                            taquaralto@sefaz.to.gov.br<br>
+                            aparecidadorionegro@sefaz.to.gov.br<br>
+                            lagoadotocantins@sefaz.to.gov.br<br>
+                            novoacordo@sefaz.to.gov.br<br>
+                            santatereza@sefaz.to.gov.br<br>
+                        </p>
+                        <p><strong>Assunto:</strong><br>Informação sobre a ida do veículo oficial às agências de atendimento do interior.</p>
+                        <p><strong>Corpo do email:</strong><br>
+                            <br>"Bom dia,<br><br>
+                        Informo que o veículo oficial partirá para as agências de atendimento do interior (Santa Tereza do TO, Lagoa do TO, Novo Acordo e Aparecida do Rio Negro) no dia **/**/***.<br>
+                        <strong>OBS: Favor enviar o recebido deste.</strong>
+                        <br><br>
+                        --<br>
+                        Nome<br>
+                        Cargo"
+                        </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="copysys">
+            <h2 class="titulo" onclick="toggleSection7()">CopySystems <span id="arrow7">🔽</span></h2>
+            <div class="oculto" id="infoSection7">
+                <div class="accordion-content-inner">
+                    <h3>Contatos</h3>
+                        <p><strong>Telefones:</strong><br>(63) 3215-4400<br>(63) 3215-1358<br><span class="vermelho">*Aperta a tecla 3 - Área técnica</span></p>
+                        <p><strong>Whatsapp:</strong><br> <a href="https://wa.me/5563992358244" target="_blank">(63) 99235-8244</a></p>
+                    <h3>Pedidos de materiais</h3>
+                        <ul>
+                            <li>Solicita 4 caixas de papel A4, quando estiver pouco em estoque.</li>
+                            <li>Solicita tonners conforme utilizado.</li>
+                            <li>Solicita bobina térmica, quando estiver pouco em estoque.</li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="backToTop" title="Voltar ao topo"></button>
+    <div class="container">
+            <button class="toggle-btn" id="themeToggle">
+                <span class="toggle-icon moon">☀️</span>
+                <span class="toggle-icon sun">🌙</span>
+                <span class="toggle-track"></span>
+            </button>
+        </div>
+    <footer>
+        <p>&copy; 2025 iagoor</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!-- 
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seções Acordeão Interativas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .accordion-item {
+            border-radius: 8px;
+            margin-bottom: 16px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            background-color: white;
+        }
+        
+        .accordion-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        
+        .accordion-header {
+            padding: 16px 24px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(135deg, #3b82f6, #6366f1);
+            color: white;
+            font-weight: 600;
+        }
+        
+        .accordion-header:hover {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 24px;
+            background-color: #f8fafc;
+        }
+        
+        .accordion-content-inner {
+            padding: 16px 0;
+        }
+        
+        .accordion-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-item.active .accordion-icon {
+            transform: rotate(45deg);
+        }
+        
+        .accordion-item.active .accordion-content {
+            max-height: 300px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen py-12 px-4">
+    <div class="max-w-2xl mx-auto">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Seções Interativas</h1>
+            <p class="text-gray-600">Clique nas seções para expandir/recolher o conteúdo</p>
+        </div>
+        
+        <div id="accordion" class="w-full">
+             
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Seção 1: Introdução</span>
+                    <span class="accordion-icon text-xl">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <p class="text-gray-700 mb-4">Bem-vindo à nossa plataforma! Aqui você encontrará informações relevantes sobre nossos serviços e soluções para o seu negócio.</p>
+                        <img src="https://placehold.co/600x300" alt="Equipe de profissionais sorrindo em um escritório moderno com computadores e plantas" class="rounded-lg mb-4 w-full">
+                        <p class="text-gray-700">Nossa missão é fornecer soluções inovadoras que impulsionam o crescimento do seu negócio com eficiência e qualidade.</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Seção 2: Nossos Serviços</span>
+                    <span class="accordion-icon text-xl">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <h3 class="font-semibold text-gray-800 mb-2">Desenvolvimento Web</h3>
+                        <p class="text-gray-700 mb-4">Criação de sites responsivos e aplicações web personalizadas para atender às necessidades específicas do seu negócio.</p>
+                        
+                        <h3 class="font-semibold text-gray-800 mb-2">Consultoria Digital</h3>
+                        <p class="text-gray-700 mb-4">Análise e recomendações estratégicas para otimizar sua presença online e melhorar seus resultados digitais.</p>
+                        
+                        <img src="https://placehold.co/600x200" alt="Dashboard analítico mostrando gráficos e métricas de desempenho em um monitor" class="rounded-lg w-full">
+                    </div>
+                </div>
+            </div>
+            
+          
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Seção 3: Depoimentos</span>
+                    <span class="accordion-icon text-xl">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <div class="bg-white p-6 rounded-lg shadow mb-4">
+                            <p class="text-gray-700 italic mb-2">"Trabalhar com esta equipe transformou completamente nossa presença online e os resultados do negócio."</p>
+                            <p class="font-semibold text-gray-800">- João Silva, CEO da Empresa X</p>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow">
+                            <p class="text-gray-700 italic mb-2">"Profissionais extremamente competentes e atentos às necessidades específicas do nosso segmento."</p>
+                            <p class="font-semibold text-gray-800">- Maria Souza, Diretora de Marketing</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span>Seção 4: Contato</span>
+                    <span class="accordion-icon text-xl">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="accordion-content-inner">
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">E-mail</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-1">Mensagem</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            
+                            <button type="button" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded-lg transition duration-200">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const accordionItems = document.querySelectorAll('.accordion-item');
+            
+            accordionItems.forEach(item => {
+                const header = item.querySelector('.accordion-header');
+                
+                header.addEventListener('click', () => {
+                    // Fecha todos os itens do acordeão
+                    accordionItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                            const otherContent = otherItem.querySelector('.accordion-content');
+                            otherContent.style.maxHeight = null;
+                        }
+                    });
+                    
+                    // Alterna o item clicado
+                    item.classList.toggle('active');
+                    const content = item.querySelector('.accordion-content');
+                    
+                    if (item.classList.contains('active')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = null;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+-->
