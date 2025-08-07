@@ -150,6 +150,10 @@ header {
     visibility: visible;
 }
 
+.hamburger-btn {
+    display: none;
+}
+
 /* Animação do botão hamburger quando aberto*/
 .hamburger-btn.open .hamburger-line:nth-child(1) {
     transform: rotate(45deg) translate(11px, 11px);
@@ -316,7 +320,7 @@ footer {
     }
 }
 
-@media (width < 1430px) {
+@media (width < 1440px) {
     h1 {
         margin: auto 20px;
         height: 100%;
