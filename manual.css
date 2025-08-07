@@ -76,7 +76,7 @@ header {
     cursor: pointer;
     width: 40px;
     height: 40px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--es);
@@ -150,9 +150,9 @@ header {
     visibility: visible;
 }
 
-.hamburger-btn {
+/* .hamburger-btn {
     display: none;
-}
+} */
 
 /* Animação do botão hamburger quando aberto*/
 .hamburger-btn.open .hamburger-line:nth-child(1) {
