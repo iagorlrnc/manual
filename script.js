@@ -124,15 +124,6 @@ function toggleSection10() {
     }
 }
 
-// toggleSection('infoSection', 'arrow');
-// toggleSection('infoSection2', 'arrow2');
-// toggleSection('infoSection3', 'arrow3');
-// toggleSection('infoSection4', 'arrow4');
-// toggleSection('infoSection5', 'arrow5');
-// toggleSection('infoSection6', 'arrow6');
-// toggleSection('infoSection7', 'arrow7');
-// toggleSection('infoSection8', 'arrow8');
-
 window.addEventListener('load', function() {
     if (window.location.hash) {
         history.replaceState(null, null, ' ');
