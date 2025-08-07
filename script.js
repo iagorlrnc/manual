@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateToggleButton('dark');
     }
             
-    prefersDark.addEventListener(e => {
+    prefersDark.addEventListener('click', e => {
         if (!localStorage.getItem('theme')) {
             const newTheme = e.matches ? 'dark' : 'light';
             htmlElement.setAttribute('data-theme', newTheme);
